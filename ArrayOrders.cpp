@@ -10,19 +10,16 @@ int main() {
     float vetor[tamanho];
     int codigo;
 
-    // Lendo o vetor de números reais
     cout << "Digite os " << tamanho << " elementos do vetor:\n";
     for (int i = 0; i < tamanho; ++i) {
         cout << "Elemento " << i + 1 << ": ";
         cin >> vetor[i];
     }
 
-    // Lendo o código
     cout << "\nDigite o código (0 para sair, 1 para ordem direta, 2 para ordem inversa): ";
     cin >> codigo;
 
     while (codigo != 0) {
-        // Mostrando o vetor de acordo com o código
         if (codigo == 1) {
             cout << "\nVetor na ordem direta:\n";
             for (int i = 0; i < tamanho; ++i) {
@@ -37,7 +34,6 @@ int main() {
             cout << "\nCódigo inválido! Digite novamente.\n";
         }
 
-        // Solicitando um novo código
         cout << "\n\nDigite o código (0 para sair, 1 para ordem direta, 2 para ordem inversa): ";
         cin >> codigo;
     }
