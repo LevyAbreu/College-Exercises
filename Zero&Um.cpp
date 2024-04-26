@@ -1,3 +1,5 @@
+//2.	Escreva um algoritmo que leia um vetor inteiro de 30 posições e crie um segundo vetor, substituindo os valores 0 por 1. Mostre os 2 vetores. 
+
 #include <iostream>
 
 using namespace std;
