@@ -1,3 +1,7 @@
+//7.	Desenvolver um programa que efetue a leitura de dez elementos de uma matriz A tipo vetor. Construir uma matriz B de mesmo tipo, 
+//acompanhando a seguinte lei de informação. Se o valor do índice for ímpar, o valor deverá ser multiplicado por 6; sendo par, deverá 
+//ser somado com 6. Ao final, mostrar os conteúdos das duas matrizes.
+
 #include <iostream>
 
 using namespace std;
