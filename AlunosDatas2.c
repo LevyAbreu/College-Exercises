@@ -1,30 +1,26 @@
+//Criar uma variável que é um vetor da estrutura DadosAluno. O programa deve obter a
+//média e a idade de 10 alunos. Depois, estes dados devem ser exibidos
+
 #include <stdio.h>
 
-struct link {
-    char nome[100];
-    char matricula[20];
-    float n1, n2, media;
-    int saida;
+struct link{
+    float media;
+    int idade;
 };
+int main(){
+    int tamanho = 10, i;
+    struct link DadosAlunos[tamanho];
 
-int main() {
-    struct link escola;
-    do {
-        printf("Nome: ");
-        scanf("%s", escola.nome);
-        printf("Matrícula: ");
-        scanf("%s", escola.matricula);
-        printf("Digite a primeira nota: ");
-        scanf("%f", &escola.n1);
-        printf("Digite a segunda nota: ");
-        scanf("%f", &escola.n2);
-
-        escola.media = (escola.n1 + escola.n2) / 2;
-        printf("[0] Continuar\n[1] Sair: ");
-        scanf("%d", &escola.saida);
-
-        printf("%s - %s - %.2f\n", escola.nome, escola.matricula, escola.media);
-    } while (escola.saida == 0);
+    for (i=0; i<tamanho; i++){
+        printf("digite a idade %d° do aluno: ", i+1);
+        scanf("%d", &DadosAlunos[i].idade);
+        printf("digite a dua média: ");
+        scanf("%f", &DadosAlunos[i].media);
+    }
+    for (i=0; i<tamanho; i++){
+        printf("a idade do %d° aluno é: %d \n", i+1, DadosAlunos[i].idade);
+        printf("a sua media é: %.2f \n", DadosAlunos[i].media);
+    }
 
     return 0;
 }
